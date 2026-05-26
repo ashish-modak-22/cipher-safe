@@ -73,3 +73,12 @@ Cipher Safe is a simple password manager where users can:
 ```bash
 git clone https://github.com/ashish-modak-22/Cipher_safe.git
 ```
+---
+
+```bash
+cd cipher-safe
+pip install bcrypt pycryptodome
+python app.py
+```
+---
+
