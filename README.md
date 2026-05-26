@@ -47,3 +47,24 @@ Cipher Safe is a simple password manager where users can:
 - Original secret displayed
 
 ---
+
+# 🔐 Security Used
+
+- bcrypt password hashing
+- AES encryption (CBC mode)
+- Random IV per encryption
+- Base64 encoding for DB storage
+- SQLite structured storage
+
+---
+
+# 🧰 Tools & Libraries
+
+- Python 3.x  
+- sqlite3  
+- bcrypt  
+- pycryptodome (AES)  
+- base64  
+
+---
+
