@@ -68,3 +68,8 @@ Cipher Safe is a simple password manager where users can:
 
 ---
 
+# 📦 Installation
+
+```bash
+git clone https://github.com/ashish-modak-22/Cipher_safe.git
+```
