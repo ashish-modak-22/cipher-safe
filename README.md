@@ -32,3 +32,18 @@ Cipher Safe is a simple password manager where users can:
 
 ---
 
+## 3️⃣ Vault System
+
+### ➕ Add Data
+- User enters title + secret
+- Secret encrypted using AES (CBC mode)
+- Encrypted data + IV stored in DB
+
+---
+
+### 🔓 View Data
+- Encrypted data fetched
+- AES decryption performed
+- Original secret displayed
+
+---
