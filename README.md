@@ -15,3 +15,20 @@ Cipher Safe is a simple password manager where users can:
 
 ---
 
+
+# ⚙️ How It Works
+
+## 1️⃣ Registration
+- Username + password input
+- Password hashed using bcrypt
+- Stored in SQLite database
+
+---
+
+## 2️⃣ Login
+- Username verified from DB
+- bcrypt checks password
+- If correct → access granted
+
+---
+
