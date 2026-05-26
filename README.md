@@ -124,7 +124,7 @@ Cipher_Safe/
 
 ---
 
-🔥 Summary
+📌 Summary
 
 - Cipher Safe is a mini secure vault system that demonstrates:
 
