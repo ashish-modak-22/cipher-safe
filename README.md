@@ -92,3 +92,23 @@ Cipher_Safe/
 └── README.md
 ```
 ---
+
+💡Concepts Learned
+- Authentication flow (register/login system)
+- Password hashing using bcrypt
+- Symmetric encryption using AES
+- CBC mode encryption logic
+- IV (Initialization Vector) usage
+- Base64 encoding/decoding for storage
+- SQLite database CRUD operations
+- Secure backend system design
+- Real-world vault system architecture
+
+---
+
+⚠️ Limitations
+- CLI based system
+- Single global encryption key
+- No GUI interface
+- No cloud storage
+- No password recovery system
