@@ -82,3 +82,13 @@ python app.py
 ```
 ---
 
+📁 Project Structure
+
+```bash
+Cipher_Safe/
+│
+├── app.py
+├── database.db
+└── README.md
+```
+---
