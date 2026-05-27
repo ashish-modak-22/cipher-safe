@@ -189,7 +189,6 @@ def encrypt_data(plain_text):
         pad(plain_text.encode(), AES.block_size)
     )
 
-    # FIXED (tuple, NOT set)
     return (
         base64.b64encode(encrypted).decode(),
         base64.b64encode(iv).decode()
