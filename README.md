@@ -37,7 +37,7 @@ Cipher Safe is a simple password manager where users can:
 ### ➕ Add Data
 - User enters title + secret
 - Secret encrypted using AES (CBC mode)
-- Encrypted data + IV stored in DB
+- Encrypted data + IV(Initializer Vector) stored in DB
 
 ---
 
@@ -52,7 +52,7 @@ Cipher Safe is a simple password manager where users can:
 
 - bcrypt password hashing
 - AES encryption (CBC mode)
-- Random IV per encryption
+- Random IV(Initializer Vector) per encryption
 - Base64 encoding for DB storage
 - SQLite structured storage
 
