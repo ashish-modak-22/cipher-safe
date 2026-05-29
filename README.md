@@ -60,7 +60,7 @@ Cipher Safe is a simple password manager where users can:
 
 # Screenshot
 <p align="center">
-<img src="screenshots/table.png" width="300"/>
+<img src="screenshots/table.png"/>
 </p>
 
 ---
