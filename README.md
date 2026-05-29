@@ -59,9 +59,8 @@ Cipher Safe is a simple password manager where users can:
 ---
 
 # Screenshot
-<p align="center">
-![App Screenshot](screenshots/table.png)
-</p>
+[App Screenshot](screenshots/table.png)
+
 
 ---
 
