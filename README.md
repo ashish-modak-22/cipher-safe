@@ -15,7 +15,12 @@ Cipher Safe is a simple password manager where users can:
 
 ---
 
+# Screenshot
+<p align="center">
+<img src="screenshots/table.png"/>
+</p>
 
+---
 # ⚙️ How It Works
 
 ## 1️⃣ Registration
@@ -57,11 +62,6 @@ Cipher Safe is a simple password manager where users can:
 - SQLite structured storage
 
 ---
-
-# Screenshot
-<p align="center">
-<img src="screenshots/table.png"/>
-</p>
 
 ---
 
