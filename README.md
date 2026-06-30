@@ -1,6 +1,19 @@
 # 🔐 Cipher Safe — Encrypted Password Vault (Python + SQLite + AES)
 
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![bcrypt](https://img.shields.io/badge/bcrypt-Password%20Hashing-FF6B6B?style=for-the-badge&logo=letsencrypt&logoColor=white)
+![PyCryptodome](https://img.shields.io/badge/PyCryptodome-AES%20Encryption-2E8B57?style=for-the-badge&logo=python&logoColor=white)
+![AES](https://img.shields.io/badge/AES-256%20Encryption-DC143C?style=for-the-badge&logo=letsencrypt&logoColor=white)
+![Base64](https://img.shields.io/badge/Base64-Encoding-4B8BBE?style=for-the-badge&logo=python&logoColor=white)
+![Security](https://img.shields.io/badge/Security-Vault%20System-black?style=for-the-badge&logo=shieldsdotio&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 A CLI-based secure password vault system built using Python that demonstrates real-world authentication, encryption, and secure data storage concepts.
+
+</div>
 
 ---
 
