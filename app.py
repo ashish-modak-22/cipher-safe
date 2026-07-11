@@ -64,7 +64,10 @@ def user_registration():
     connection = database_connect()
     cursor = connection.cursor()
 
+    
     try:
+
+        # Insert the new user's credentials into the users table
         cursor.execute(
             """ INSERT INTO users(username, hashed_password) VALUES(?,?)""",
             (username, hashed_password)
@@ -78,6 +81,7 @@ def user_registration():
         print(e)
 
     connection.close()
+
 
 
 def user_login():
