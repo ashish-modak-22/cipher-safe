@@ -17,6 +17,8 @@ def database_connect():
 
 
 def initialize_database():
+
+    # Initialize the SQLite database by creating required tables if they do not already exist
     connection = database_connect()
     cursor = connection.cursor()
 
