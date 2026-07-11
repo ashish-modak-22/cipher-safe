@@ -54,6 +54,7 @@ def user_registration():
     username = input("Enter the userID: ")
     password = input("Enter password: ")
 
+    # Generate a secure hash of the user's password before storing it
     hashed_password = bcrypt.hashpw(
         password.encode('utf-8'),
         bcrypt.gensalt()
