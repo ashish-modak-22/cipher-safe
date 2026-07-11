@@ -191,6 +191,8 @@ def show_user_data(user_id):
 
 def user_data_menu(user_id):
 
+    # Displays the user dashboard and handles data management operations until the user chooses to log out
+
     while True:
         print("\n------------- Press ------------------\n")
         print("1 to add data")
@@ -199,6 +201,7 @@ def user_data_menu(user_id):
 
         choice = int(input("Enter your choice: "))
 
+        # Execute the selected operation
         if choice == 1:
             add_user_data(user_id)
 
