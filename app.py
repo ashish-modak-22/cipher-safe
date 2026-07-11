@@ -225,12 +225,15 @@ def encrypt_data(plain_text):
     # Encrypts plaintext using AES-CBC and returns the encrypted data along with the initialization vector(IV)
     iv = get_random_bytes(16)
 
+    # Create an AES cipher object in CBC mode
     cipher = AES.new(key, AES.MODE_CBC, iv)
 
+    # Apply padding and encrypt the plaintext
     encrypted = cipher.encrypt(
         pad(plain_text.encode(), AES.block_size)
     )
 
+    # Return the encrypted data and IV as Base64-encoded strings
     return (
         base64.b64encode(encrypted).decode(),
         base64.b64encode(iv).decode()
