@@ -152,7 +152,10 @@ def add_user_data(user_id):
     print("Your data is saved into the database")
 
 
+
 def show_user_data(user_id):
+
+    # Retrives, decrypts and displays all data associated with the given user
     connection = database_connect()
     cursor = connection.cursor()
 
