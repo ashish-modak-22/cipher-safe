@@ -99,6 +99,7 @@ def user_login():
     connection = database_connect()
     cursor = connection.cursor()
 
+    # Fetch the user's ID and stored password hash using the username
     cursor.execute(
         """ SELECT id, hashed_password FROM users WHERE username = ?""",
         (userName,)
@@ -107,6 +108,7 @@ def user_login():
     user = cursor.fetchone()
     connection.close()
 
+    # Return if the username does not exist
     if user is None:
         print("The given username is not found")
         return None
