@@ -41,7 +41,8 @@ def initialize_database():
         iv TEXT
     )
 """)
-    
+
+    # Save database changes and close the connection
     connection.commit()
     connection.close()
 
