@@ -159,6 +159,7 @@ def show_user_data(user_id):
     connection = database_connect()
     cursor = connection.cursor()
 
+    # Fetch all encrypted records belonging to the specified user
     cursor.execute(
         """ SELECT title, encrypted_data, iv FROM user_data WHERE user_id=?""",
         (user_id,)
@@ -167,12 +168,14 @@ def show_user_data(user_id):
     data_rows = cursor.fetchall()
     connection.close()
 
+    # Return if no records are found for the user
     if len(data_rows) == 0:
         print("Oops! No data found")
         return
     
     print("\n--------------- Your saved data are -------------\n")
-    
+
+    # Decrypt and display each stored record
     for data_row in data_rows:
 
         title = data_row[0]
