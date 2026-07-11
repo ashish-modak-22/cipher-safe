@@ -84,6 +84,7 @@ def user_registration():
         print("Registration failed! Username already exists!")
         print(e)
 
+    # Close the database connection to release resources
     connection.close()
 
 
