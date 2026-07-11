@@ -116,6 +116,7 @@ def user_login():
     user_id = user[0]
     stored_hash = user[1]
 
+    # Verify the entered password against the stored hash
     if bcrypt.checkpw(password.encode('utf-8'), stored_hash.encode()):
         print("Login successful!!")
         return user_id
