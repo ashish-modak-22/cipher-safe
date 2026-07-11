@@ -242,11 +242,16 @@ def encrypt_data(plain_text):
 
 def decrypt_data(encrypted_text, iv):
 
+    # Decrypts AES-encrypted data using the provided initialization vector(IV) and returns the original plaintext
+
+    # Decode the Base64-encoded encrypted data and IV
     encrypted_text = base64.b64decode(encrypted_text)
     iv = base64.b64decode(iv)
 
+    # Create an AES cipher object in CBC mode using the stored IV
     cipher = AES.new(key, AES.MODE_CBC, iv)
 
+    # Decrypt the data and remove padding
     decrypted = unpad(
         cipher.decrypt(encrypted_text),
         AES.block_size
