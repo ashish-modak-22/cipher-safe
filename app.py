@@ -216,10 +216,13 @@ def user_data_menu(user_id):
             print("Wrong choice")
 
 
+# Secret key used for AES encryption and decryption
 key = b"ashishpythoncode"
 
 
 def encrypt_data(plain_text):
+
+    # Encrypts plaintext using AES-CBC and returns the encrypted data along with the initialization vector(IV)
     iv = get_random_bytes(16)
 
     cipher = AES.new(key, AES.MODE_CBC, iv)
