@@ -189,6 +189,7 @@ def show_user_data(user_id):
         print("\n")
 
 
+
 def user_data_menu(user_id):
 
     # Displays the user dashboard and handles data management operations until the user chooses to log out
@@ -220,6 +221,7 @@ def user_data_menu(user_id):
 key = b"ashishpythoncode"
 
 
+
 def encrypt_data(plain_text):
 
     # Encrypts plaintext using AES-CBC and returns the encrypted data along with the initialization vector(IV)
@@ -238,6 +240,7 @@ def encrypt_data(plain_text):
         base64.b64encode(encrypted).decode(),
         base64.b64encode(iv).decode()
     )
+
 
 
 def decrypt_data(encrypted_text, iv):
@@ -260,8 +263,15 @@ def decrypt_data(encrypted_text, iv):
     return decrypted.decode()
 
 
+
 def main():
 
+    '''
+       Entry point of the application,
+       Handles user registration, login, and navigation to the user dashboard
+    '''
+
+    # Initialize the database and required tables
     initialize_database()
 
     while True:
@@ -271,18 +281,22 @@ def main():
         print("3 to Exit")
 
         choice = int(input("Enter your choice: "))
-        
+
+        # Register a new user
         if choice == 1:
             user_registration()
 
+        # Authenticates an existing user
         elif choice == 2:
             user_id = user_login()
 
+            # Open the user dashboard after successful authentication
             if user_id:
                 print("You can now store your data.......")
                 print(f"User Id No. : {user_id}")
                 user_data_menu(user_id)
 
+        # Terminate the application
         elif choice == 3:
             print("Exiting the process.......")
             break
@@ -290,4 +304,5 @@ def main():
         else:
             print("Invalid choice! Please check your options")
 
+# Start the application
 main()
