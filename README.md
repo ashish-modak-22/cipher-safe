@@ -154,3 +154,9 @@ Cipher_Safe/
 - How secure systems manage user data flow
 
 ---
+
+## 📄 License
+ 
+This project is open source and available under the [Apache License 2.0](License).
+
+---
