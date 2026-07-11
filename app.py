@@ -125,20 +125,27 @@ def user_login():
         return None
 
 
+
 def add_user_data(user_id):
+
+    # Encrypts and store user-provided data securely in the database
     title = input("Enter the title of the data: ")
     secret = input("Enter the secret data: ")
 
+    # Encrypt the secret data before storing it in the database
     encrypted_text, iv = encrypt_data(secret)
 
+    # Establish a database connection
     connection = database_connect()
     cursor = connection.cursor()
 
+    # Store the encrypted data along with its initialization vector (IV)
     cursor.execute(
         """ INSERT INTO user_data(user_id, title, encrypted_data, iv) VALUES(?,?,?,?)""",
         (user_id, title, encrypted_text, iv)
     )
 
+    # Commit the transaction and close the database connection
     connection.commit()
     connection.close()
 
