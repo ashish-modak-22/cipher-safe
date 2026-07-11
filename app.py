@@ -59,7 +59,8 @@ def user_registration():
         password.encode('utf-8'),
         bcrypt.gensalt()
     ).decode()
-    
+
+    # Establish database connection to store user information
     connection = database_connect()
     cursor = connection.cursor()
 
