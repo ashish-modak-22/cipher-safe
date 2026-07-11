@@ -22,6 +22,7 @@ def initialize_database():
     connection = database_connect()
     cursor = connection.cursor()
 
+    # Create users table to store user authentication details
     cursor.execute("""
        CREATE TABLE IF NOT EXISTS users(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -29,7 +30,8 @@ def initialize_database():
         hashed_password TEXT       
     )
 """)
-    
+
+    # Create user_data table to store encrypted user-specified data
     cursor.execute("""
       CREATE TABLE IF NOT EXISTS user_data(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
