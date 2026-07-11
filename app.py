@@ -6,12 +6,16 @@ from Crypto.Random import get_random_bytes
 import base64
 
 
+
+
 def database_connect():
+
+    # Establishes a connection with the SQLite database and returns the connection object
     connection = sqlite3.connect("database.db")
     return connection
 
 
-# Database initializer function ---> It initializes the registration and login database for the user ....
+
 def initialize_database():
     connection = database_connect()
     cursor = connection.cursor()
@@ -38,7 +42,6 @@ def initialize_database():
     connection.close()
 
 
-# User registration database ---> creates database for userIDs and encrypted passwords
 def user_registration():
     username = input("Enter the userID: ")
     password = input("Enter password: ")
@@ -67,7 +70,6 @@ def user_registration():
     connection.close()
 
 
-# User login 
 def user_login():
     userName = input("Enter the username/ID: ")
     password = input("Enter the password: ")
@@ -98,7 +100,6 @@ def user_login():
         return None
 
 
-# Adding the user data ...
 def add_user_data(user_id):
     title = input("Enter the title of the data: ")
     secret = input("Enter the secret data: ")
@@ -119,7 +120,6 @@ def add_user_data(user_id):
     print("Your data is saved into the database")
 
 
-# Viewing the stored data ....
 def show_user_data(user_id):
     connection = database_connect()
     cursor = connection.cursor()
@@ -175,11 +175,9 @@ def user_data_menu(user_id):
             print("Wrong choice")
 
 
-# The AES 16 bytes key generation for encryption...
 key = b"ashishpythoncode"
 
 
-# Encryption .....
 def encrypt_data(plain_text):
     iv = get_random_bytes(16)
 
@@ -195,7 +193,6 @@ def encrypt_data(plain_text):
     )
 
 
-# Decryption ...
 def decrypt_data(encrypted_text, iv):
 
     encrypted_text = base64.b64decode(encrypted_text)
