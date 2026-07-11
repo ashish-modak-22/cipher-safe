@@ -9,7 +9,7 @@
 ![AES](https://img.shields.io/badge/AES-256%20Encryption-DC143C?style=for-the-badge&logo=letsencrypt&logoColor=white)
 ![Base64](https://img.shields.io/badge/Base64-Encoding-4B8BBE?style=for-the-badge&logo=python&logoColor=white)
 ![Security](https://img.shields.io/badge/Security-Vault%20System-black?style=for-the-badge&logo=shieldsdotio&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
 A CLI-based secure password vault system built using Python that demonstrates real-world authentication, encryption, and secure data storage concepts.
 
