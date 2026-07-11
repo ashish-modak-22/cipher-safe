@@ -90,9 +90,12 @@ def user_registration():
 
 
 def user_login():
+
+    # Authenticates a user by verifying the provided credentials against the stored password hash
     userName = input("Enter the username/ID: ")
     password = input("Enter the password: ")
 
+    # Establish a database connection to retrieve user credentials
     connection = database_connect()
     cursor = connection.cursor()
 
