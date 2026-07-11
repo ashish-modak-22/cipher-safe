@@ -47,7 +47,10 @@ def initialize_database():
     connection.close()
 
 
+
 def user_registration():
+
+    # Handles new user registration by collecting user details, securely hashing the password, and preparing a database connection
     username = input("Enter the userID: ")
     password = input("Enter password: ")
 
