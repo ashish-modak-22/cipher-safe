@@ -73,10 +73,14 @@ def user_registration():
             (username, hashed_password)
         )
 
+        # Commit the transaction after successful insertion
         connection.commit()
         print("Your registration is done successfully!!")
 
+    
     except Exception as e:
+
+        # Handle registration errors (e.g., duplicate username)
         print("Registration failed! Username already exists!")
         print(e)
 
