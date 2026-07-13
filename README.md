@@ -76,8 +76,6 @@ Cipher Safe is a simple password manager where users can:
 
 ---
 
----
-
 # 🧰 Tools & Libraries
 
 - Python 3.x  
